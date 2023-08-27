@@ -48,7 +48,7 @@ const PurchaseNFT = ({ state }) => {
         // style={{ width: "39%", marginTop: "-455px", marginLeft: "750px" }}
       >
         <form onSubmit={purchaseTokens}>
-          <div className="mb-3">
+          <div className="purchase_div">
             <label className="form-label" style={{ fontSize: "14px" }}>
               Enter amount of tokens. Price (1 XALTS = 0.0001 ETH = ~ $ 0.18)
             </label>
@@ -66,10 +66,11 @@ const PurchaseNFT = ({ state }) => {
           </div>
           <button
             type="submit"
-            className="btn btn-success"
+            className="codepen-button"
             disabled={!state.contract}
-          >
+          ><span>
             Purchase XALTS Token
+            </span>
           </button>
           {showPopup && (
             <PopupMessage

@@ -139,16 +139,17 @@ function App() {
           </div>
         ) : (
           <button
-            style={{
-              marginLeft: "1130px",
-              marginTop: "-56px",
-              width: "120px",
-              height: "33px",
-            }}
-            className="block-button"
+            // style={{
+            //   marginLeft: "1130px",
+            //   marginTop: "-56px",
+            //   width: "120px",
+            //   height: "33px",
+            // }}
+            className="purchase_token_btn"
             onClick={connectWallet}
-          >
+          ><span>
             Connect Wallet
+            </span>
           </button>
         )}
       </div>
@@ -184,7 +185,7 @@ function App() {
         NFT Shares: {balanceXALTS}
       </p>
       <div>
-        <h2 className="title">Buy your Fractional Real Estate NFT shares</h2>
+        <h1 className="title">Own Real Estate NFT Shares!</h1>
       </div>
       <div
         className="container"

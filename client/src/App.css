@@ -3,6 +3,7 @@
 }
 
 .App-logo {
+  border-radius: 50%;
   height: 40vmin;
   pointer-events: none;
 }
@@ -91,10 +92,17 @@
 
 /* Header.css */
 .header {
-  background-color: #2b1247;
-  color: #fff;
+  margin-top: -14px;
+  background-color: #60eada;
+  border-radius: 25px;
+  outline-style: solid;
+  color: #000000;
   padding: 1rem;
   /* height: 75px; */
+}
+
+.header img {
+  border-radius: 50%;
 }
 
 .header h1 {
@@ -125,16 +133,27 @@
 
 /* Footer.css */
 .footer {
-  background-color: #2b1247;
-  color: #fff;
+  border-radius: 25px;
+  background: #60eada;
+  outline-style: solid;
+  color: #000000;
   padding: 1rem;
   text-align: center;
   height: 61px;
 }
 
 .title {
+  
   text-align: center;
-  color: #681b04;
+  /* color: #3f3f3e; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  font-size: 2em;
+  /* font-weight: bold; */
+  color: rgb(245, 238, 238);
+  background: linear-gradient(to right, #ffffff, #333333);
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* .body {
@@ -170,7 +189,7 @@ body {
 body::after {
   background-image: url('./image-real-estate.jpg');
   content: "";
-  opacity: 0.4;
+  opacity: 1;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -245,3 +264,128 @@ body::after {
 }
 
 
+
+
+.mint_btn {
+  outline-style: solid;
+  display: inline-block;
+/* outline: 0; */
+border: 0;
+cursor: pointer;
+background-color: #1989e5;
+border-radius: 50px;
+padding: 8px 16px;
+font-size: 16px;
+font-weight: 700;
+color: white;
+line-height: 26px;
+
+}
+
+.status_btn {
+  outline-style: solid;
+  display: inline-block;
+/* outline: 0; */
+border: 0;
+cursor: pointer;
+background-color: #e9e02d;
+border-radius: 50px;
+padding: 8px 16px;
+font-size: 16px;
+font-weight: 700;
+color: white;
+line-height: 26px;
+
+}
+
+.purchase_token_btn {
+  outline-style: solid;
+  margin-left: 1230px;
+  margin-top: 16px;
+  display: inline-block;
+  /* outline: none; */
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color,border-color,color,box-shadow,filter;
+  transition-duration: .3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #169442;
+  height: 48px;
+  :hover{
+      transform: scale(1.04);
+      background-color: #238144;
+  }
+
+}
+
+/* Yoinked from CodePen, but improved the animation
+so that it is smooth among other more minor things */
+
+.codepen-button {
+  display: block;
+  cursor: pointer;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 3px;
+  isolation: isolate;
+}
+
+.codepen-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 25% 100%;
+  animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+  animation-play-state: paused;
+  translate: -5% 0%;
+  transition: translate 0.25s ease-out;
+}
+
+.codepen-button:hover::before {
+  animation-play-state: running;
+  transition-duration: 0.75s;
+  translate: 0% 0%;
+}
+
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+  to {
+    transform: translateX(-25%);
+  }
+}
+
+.codepen-button span {
+  position: relative;
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  background: #000;
+  border-radius: 15px;
+  height: 70%;
+}
+
+.form-control {
+  border-radius: 15px;
+}
+
+.purchase_div {
+  align-content: center;
+}

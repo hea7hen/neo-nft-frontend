@@ -67,7 +67,7 @@ const MintNFT = ({ state }) => {
         <form onSubmit={whitelist}>
           <div className="mb-3">
             <label className="form-label" style={{ fontSize: "14px" }}>
-              Addresses to whitelist
+               <b>Addresses to whitelist </b>
             </label>
             <input
               type="text"
@@ -87,7 +87,7 @@ const MintNFT = ({ state }) => {
           <button
             onClick={processInputToArrayWhitelist}
             type="submit"
-            className="btn btn-primary"
+            className="mint_btn"
             disabled={!state.contract}
           >
             Mint NFT
@@ -100,7 +100,9 @@ const MintNFT = ({ state }) => {
         >
           <div className="mb-3">
             <label className="form-label" style={{ fontSize: "14px" }}>
+              <b>
               Check Wallet Status
+              </b>
             </label>
             <input
               type="text"
@@ -126,7 +128,7 @@ const MintNFT = ({ state }) => {
           <button
             style={{ marginTop: "5px" }}
             type="submit"
-            className="btn btn-secondary"
+            className="status_btn"
             disabled={!state.contract}
           >
             Check Status
