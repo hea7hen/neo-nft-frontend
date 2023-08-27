@@ -1,0 +1,247 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.block-button {
+  background-color: #ff3700;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(101, 74, 59, 0.4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans",
+    sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* vertical-align: baseline; */
+  white-space: nowrap;
+  display: block;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  /* margin-top: 200px; */
+}
+
+.block-button:hover,
+.button-7:focus {
+  background-color: rgb(0, 51, 204);
+}
+
+.block-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.block-button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+/* Header.css */
+.header {
+  background-color: #2b1247;
+  color: #fff;
+  padding: 1rem;
+  /* height: 75px; */
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer.css */
+.footer {
+  background-color: #2b1247;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  height: 61px;
+}
+
+.title {
+  text-align: center;
+  color: #681b04;
+}
+
+/* .body {
+  height: 100%;
+   background: linear-gradient(10deg, #EE7752, #812f4f, #23A6D5, #1ca988);
+     animation: gradient 20s ease infinite; 
+      background-size: 500% 500%;
+  
+} */
+
+/* App.css */
+/* body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  opacity: 20;
+  background-image: url('./image-real-estate.jpg');
+  opacity: 30;
+  /* Add more styles if needed */
+/* } */ */
+
+body {
+  width: 1200px;
+  height: 1200px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+body::after {
+  background-image: url('./image-real-estate.jpg');
+  content: "";
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;   
+}
+
+@-webkit-keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+@keyframes gradient{
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+     background-position: 0% 50%;
+  }
+}
+/* WalletButton.css */
+
+.wallet-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wallet-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* PopupMessage.css */
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
